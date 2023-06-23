@@ -61,6 +61,7 @@ h1 {
 }
 
 :root {
+  --white: #c22623;
   --gray: #424242;
   --green: #3fd50f;
   --yellow: #ecc900;
