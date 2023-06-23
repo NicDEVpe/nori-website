@@ -50,13 +50,6 @@ p {
   margin: auto;
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--green);
-  max-width: 80%;
-}
-n {
-  margin: auto;
-  font-size: 1.5rem;
-  font-weight: 400;
   color: var(--sea);
   max-width: 80%;
 }
