@@ -1,2 +1,2 @@
-This is officially code of norigami website
-©Nori
+This is officially code of C R T website
+©C R T Community
