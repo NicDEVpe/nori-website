@@ -1,11 +1,14 @@
+/* Mencegah pemilihan teks */
 body {
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* KHTML based browsers */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome, Safari, UC Browser */
+    -khtml-user-select: none; /* Konqueror */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Standard syntax */
 }
 
+/* Mencegah interaksi mouse pada gambar */
 img {
     pointer-events: none; /* Mencegah interaksi mouse pada gambar */
     -webkit-user-drag: none; /* Mencegah penarikan gambar di Safari */
