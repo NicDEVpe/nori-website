@@ -14,19 +14,19 @@
         }
         
         h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 42px; /* Membesarkan ukuran teks */
+            margin-bottom: 15px;
             color: #333;
         }
         
         .error-message {
-            font-size: 18px;
+            font-size: 20px; /* Membesarkan ukuran teks */
             color: #666;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
         .error-image {
-            max-width: 100%;
+            max-width: 70%; /* Mengurangi ukuran gambar */
             height: auto;
             display: block;
             margin: 0 auto;
@@ -34,14 +34,19 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
-        a {
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #007bff;
+            color: white;
             text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         
-        a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -52,7 +57,7 @@
     <img src="https://cdn.crtofficial.tech/img/404.jpg" alt="Gambar 404" class="error-image">
     <!-- Ganti URL gambar di atas dengan URL gambar 404 yang sesuai -->
     
-    <p><a href="index.html">Kembali ke Halaman Utama</a></p>
+    <a href="index.html" class="button">Kembali ke Halaman Utama</a>
     <!-- Ganti 'index.html' dengan nama file halaman utama Anda -->
 </body>
 </html>
