@@ -43,6 +43,43 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+      <style>
+        /* Animasi blur awal */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .loading-icon {
+            width: 100px;
+            height: 100px;
+            background-image: url('https://cdn.crtofficial.tech/img/android-icon-192x192.png');
+            background-size: cover;
+            border: 8px solid #ccc;
+            border-top: 8px solid #007bff;
+            border-radius: 50%;
+            filter: blur(10px); /* Efek blur awal */
+            opacity: 0; /* Opasitas awal */
+            animation: fadeIn 1.5s ease-in-out forwards, blurOut 1.5s ease-in-out 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                filter: blur(0); /* Hilangkan efek blur */
+                opacity: 1; /* Munculkan dengan animasi */
+            }
+        }
+
+        @keyframes blurOut {
+            to {
+                filter: blur(10px); /* Kembalikan efek blur setelah animasi selesai */
+            }
+        }
+      </style>
 </head>
 
 <body>
