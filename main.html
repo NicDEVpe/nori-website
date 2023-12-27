@@ -38,6 +38,12 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <style>
+    body {
+      display: none; /* Sembunyikan konten awal */
+    }
+      </style>
+  
 </head>
 
 <body>
@@ -230,6 +236,27 @@
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.display = "block"; // Tampilkan body
+    document.body.style.opacity = 0; // Atur opasitas awal
+    fadeIn(document.body); // Panggil fungsi fadeIn untuk efek fade-in
+  });
+
+  // Fungsi untuk efek fade-in
+  function fadeIn(element) {
+    var opacity = 0;
+    var timer = setInterval(function() {
+      if (opacity >= 1) {
+        clearInterval(timer); // Hentikan interval saat opasitas mencapai 1
+      }
+      element.style.opacity = opacity;
+      opacity += 0.1; // Ubah opasitas secara bertahap
+    }, 100); // Interval waktu perubahan opasitas (ms)
+  }
+  </script>
+            
 </body>
 
 </html>
