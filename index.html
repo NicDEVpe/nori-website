@@ -56,15 +56,23 @@
             to { opacity: 1; } /* Munculkan dengan animasi */
         }
     </style>
-    <script>
-        // Setelah 2 detik, redirect ke halaman utama
-        setTimeout(function() {
-            window.location.href = "main.html"; // Ganti dengan nama halaman utama Anda
-        }, 2000); // Jeda 2 detik
+<script>
+        // Menggunakan JavaScript dan Ajax untuk mengambil konten main.html
+        document.addEventListener("DOMContentLoaded", function() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("mainContent").innerHTML = this.responseText;
+                }
+            };
+            xhr.open("GET", "main.html", true);
+            xhr.send();
+        });
     </script>
 </head>
 <body>
     <!-- Icon gambar untuk animasi loading -->
     <div class="loading-icon"></div>
+    <div id="mainContent"></div>
 </body>
 </html>
