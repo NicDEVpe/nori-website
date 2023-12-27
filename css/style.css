@@ -446,11 +446,10 @@ a:focus {
   background-color: #141414;
 }
 
-.service_section .box:hover img {
+/*.service_section .box:hover img {
   -webkit-filter: invert(1);
   filter: invert(1);
-}
-
+} */
 .service_section .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
