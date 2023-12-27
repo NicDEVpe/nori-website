@@ -56,13 +56,14 @@
             to { opacity: 1; } /* Munculkan dengan animasi */
         }
     </style>
-<script>
+    <script>
         // Menggunakan JavaScript dan Ajax untuk mengambil konten main.html
         document.addEventListener("DOMContentLoaded", function() {
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("mainContent").innerHTML = this.responseText;
+                    document.body.style.overflow = "auto"; // Menambahkan overflow: auto setelah konten dimuat
                 }
             };
             xhr.open("GET", "main.html", true);
