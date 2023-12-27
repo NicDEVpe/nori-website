@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Website dengan Animasi Masuk</title>
+    <style>
+        /* CSS untuk Animasi Masuk */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        
+        /* Animasi loading */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-icon {
+            width: 100px;
+            height: 100px;
+            /* Tambahkan gambar ikon dari website */
+            /* Ganti URL di bawah ini dengan URL gambar ikon Anda */
+            background-image: url('https://cdn.crtofficial.tech/img/android-icon-192x192.png');
+            background-size: cover;
+            border: 8px solid #ccc;
+            border-top: 8px solid #007bff;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+    </style>
+    <script>
+        // Setelah 2 detik, redirect ke halaman utama
+        setTimeout(function() {
+            window.location.href = "index.html"; // Ganti dengan nama halaman utama Anda
+        }, 2000); // Jeda 2 detik
+    </script>
+</head>
+<body>
+    <!-- Icon gambar untuk animasi loading -->
+    <div class="loading-icon"></div>
+</body>
+</html>
