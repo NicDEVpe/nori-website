@@ -9,7 +9,7 @@ body {
 .loading-icon {
     width: 100px;
     height: 100px;
-    background-image: url('https://example.com/your-icon.png'); /* Ganti URL dengan URL icon Anda */
+    background-image: url('https://cdn.crtofficial.tech/img/android-icon-192x192.png'); /* Ganti URL dengan URL icon Anda */
     background-size: cover;
     border: 8px solid #ccc;
     border-top: 8px solid #007bff;
