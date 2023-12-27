@@ -10,23 +10,17 @@
     
     <title>C R T</title>
 
- <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.crtofficial.tech/img/apple-icon-57x57.png">
- <link rel="apple-touch-icon" sizes="60x60" href="https://cdn.crtofficial.tech/img/apple-icon-60x60.png">
- <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.crtofficial.tech/img/apple-icon-72x72.png">
- <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.crtofficial.tech/img/apple-icon-76x76.png">
- <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.crtofficial.tech/img/apple-icon-114x114.png">
- <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.crtofficial.tech/img/apple-icon-120x120.png">
- <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.crtofficial.tech/img/apple-icon-144x144.png">
- <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.crtofficial.tech/img/apple-icon-152x152.png">
- <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.crtofficial.tech/img/apple-icon-180x180.png">
- <link rel="icon" type="image/png" sizes="192x192"  href="https://cdn.crtofficial.tech/img/android-icon-192x192.png">
- <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.crtofficial.tech/img/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.crtofficial.tech/img/favicon-96x96.png">
- <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.crtofficial.tech/img/favicon-16x16.png">
- <link rel="manifest" href="https://cdn.crtofficial.tech/img/manifest.json">
- <meta name="msapplication-TileColor" content="#ffffff">
- <meta name="msapplication-TileImage" content="https://cdn.crtofficial.tech/img/ms-icon-144x144.png">
- <meta name="theme-color" content="#ffffff">
+    <!-- Ikon untuk perangkat mobile -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.crtofficial.tech/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.crtofficial.tech/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.crtofficial.tech/img/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.crtofficial.tech/img/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.crtofficial.tech/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://cdn.crtofficial.tech/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="https://cdn.crtofficial.tech/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
     <style>
         /* CSS untuk Animasi Masuk */
         body {
@@ -34,8 +28,10 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #000; /* Ubah ke tema gelap */
             margin: 0;
+            opacity: 0; /* Atur opasitas awal */
+            animation: fadeIn 1.5s ease-in-out forwards; /* Animasi fade */
         }
         
         /* Animasi loading */
@@ -47,14 +43,17 @@
         .loading-icon {
             width: 100px;
             height: 100px;
-            /* Tambahkan gambar ikon dari website */
-            /* Ganti URL di bawah ini dengan URL gambar ikon Anda */
             background-image: url('https://cdn.crtofficial.tech/img/android-icon-192x192.png');
             background-size: cover;
             border: 8px solid #ccc;
             border-top: 8px solid #007bff;
             border-radius: 50%;
             animation: spin 2s linear infinite;
+        }
+        
+        /* Animasi fade */
+        @keyframes fadeIn {
+            to { opacity: 1; } /* Munculkan dengan animasi */
         }
     </style>
     <script>
