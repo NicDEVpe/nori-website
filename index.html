@@ -54,6 +54,7 @@
 
 <body>
 <div class="loading-icon"></div>
+<div id="mainContent" style="display: none;">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -242,7 +243,19 @@
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+        // Menampilkan animasi terlebih dahulu
+        document.addEventListener("DOMContentLoaded", function() {
+            var loadingIcon = document.querySelector('.loading-icon');
+            loadingIcon.style.animation = 'fadeIn 1.5s ease-in-out forwards, blurOut 1.5s ease-in-out 1.5s forwards';
 
+            // Setelah animasi selesai, tampilkan konten asli dari index.html
+            setTimeout(function() {
+                var mainContent = document.getElementById('mainContent');
+                mainContent.style.display = 'block';
+            }, 3000); // Ubah sesuai kebutuhan waktu animasi
+        });
+  </script>
   <script>
   document.addEventListener("DOMContentLoaded", function() {
     document.body.style.display = "block"; // Tampilkan body
