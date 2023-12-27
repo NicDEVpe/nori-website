@@ -6,30 +6,6 @@ body {
   background-color: #333333;
   overflow-x: hidden;
 }
-.loading-icon {
-    width: 100px;
-    height: 100px;
-    background-image: url('https://cdn.crtofficial.tech/img/android-icon-192x192.png'); /* Ganti URL dengan URL icon Anda */
-    background-size: cover;
-    border: 8px solid #ccc;
-    border-top: 8px solid #007bff;
-    border-radius: 50%;
-    filter: blur(10px); /* Efek blur awal */
-    animation: fadeIn 1.5s ease-in-out forwards, blurOut 1.5s ease-in-out 1.5s forwards; /* Animasi fade in dan blur out */
-}
-
-@keyframes fadeIn {
-    to {
-        filter: blur(0); /* Hilangkan efek blur */
-        opacity: 1;
-    }
-}
-
-@keyframes blurOut {
-    to {
-        filter: blur(10px); /* Kembalikan efek blur setelah animasi selesai */
-    }
-}
 
 .layout_padding {
   padding: 90px 0;
